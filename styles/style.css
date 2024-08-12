@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --color-primario: #F7EFE5;
+    --color-secundario:  #4F1787;
+    --color-terciario:  #EB3678;
+    --color-cuaternario:#C8A1E0;
+    --color-quinto:#E2BFD9;
+    --fuente-Montserrat:'Montserrat', sans-serif ; 
+    --fuente-Krona:'krona One', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin:0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+
+}
+
+.header{
+padding: 2% 0% 0% 15%;
+}
+
+.header__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link{
+    font-family:'Montserrat', sans-serif ; /*Fuente*/
+    font-size: 24px;/*Tamaño*/
+    font-weight: 600; /*Grosos texto*/
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+
+.presentacion {
+    padding: 6% 15%; /*Crea espacio dentro del elemento*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentacion__contenido{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion__contenido__titulo{
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.titulo-destaque {
+    color: var(--color-terciario); ;
+}
+
+.presentacion__contenido__texto{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;   
+}
+.presentacion__contenido__texto:hover{
+    background-color:#FF4E88 ;
+}
+
+.presentacion__enlaces{
+    display: flex;
+    justify-content: space-between;
+    /*Posicionar botones verticales*/
+    flex-direction: column;
+    /*Centrar botones verticalmente*/
+    align-items: center;
+    /*Crear espacios entre los botones*/
+    gap:32px;
+}
+.presentacion_enlaces_subtitulo{
+    /*Tipo de letra*/
+font-family: 'krona One', sans-serif;
+/*Tamaño de letra*/
+font-size: 24px;
+font-weight: 400;
+}
+.presentacion__enlaces__link{
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #EB3678;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid var(--color-cuaternario);
+    /* Propiedad de CSS que permite crear un diseño flexible y alineado.
+    Es muy útil para distribuir y alinear elementos dentro de un contenedor. */
+    display: flex;
+    /*Alinear al centro, como es el eje horizontal se usa center*/
+    justify-content: center;
+    /*Distancia entre iconos y texto*/
+    gap: 16px;
+}
+/* los botones cambian de color cuando colocamos el cursor sobre ellos. Esto se logra utilizando la propiedad hover en CSS.*/
+.presentacion__enlaces__link:hover {
+    background-color: var(--color-quinto);
+    padding: 3%;
+}
+.footer{
+    /*Fondo del contenido*/
+    background-color: var(--color-cuaternario);
+    /*Relleno*/
+    padding: 24px;
+    color: var(--color-primario);
+    text-align: center;
+    /*Tipo de fuente*/
+    font-family: 'Montserrat', sans-serif;
+    /*Tamaño de fuente*/
+    font-size: 24px;
+    font-weight: 400;
+}
